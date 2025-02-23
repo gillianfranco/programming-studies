@@ -85,3 +85,10 @@ elif escolha == 3:
 
 else:
     print('Opção inválida, tente novamente!')
+print()
+
+# Operador ternário
+idade = 18
+status = "Maior de idade" if idade >= 18 else "Menor de Idade"
+print(status)
+print()
