@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Resultado: <span id="resultado"></span></h1>
+    <script>
+      // let num1 = 28;
+      // let num2 = 17;
+
+      // // Condicional simples
+      // if (num1 > num2) {
+      //   console.log("O número " + num1 + " é maior que o número " + num2 + ".");
+      // }
+
+      // // Condicional composta
+      // if (num1 > num2) {
+      //   console.log("O número " + num1 + " é maior que o número " + num2 + ".");
+      // } else {
+      //   console.log("O número " + num2 + " é maior que o número " + num1 + ".");
+      // }
+
+      // // Condicionais aninhadas
+      // let nota = window.prompt("Digite uma nota de 0 a 10: ");
+      // let resultado = "";
+
+      // if (nota < 6) {
+      //   if (nota >= 4) {
+      //     resultado = "Você está de recuperação!";
+      //   } else {
+      //     resultado = "Você foi reprovado.";
+      //   }
+      // } else {
+      //   resultado = "Parabéns, você foi aprovado!";
+      // }
+
+      // document.getElementById("resultado").innerText = resultado;
+
+      // Condicionais de Múltipla escolha
+      let escolha = parseInt(
+        window.prompt(
+          "Digite 1 para comprar frutas, 2 para comprar verduras ou 3 para comprar carnes: "
+        )
+      );
+
+      let resultado = "";
+
+      switch (escolha) {
+        case 1:
+          resultado = "Você escolheu comprar frutas!";
+          break;
+        case 2:
+          resultado = "Você escolheu comprar verduras!";
+          break;
+        case 3:
+          resultado = "Você escolheu comprar carnes!";
+          break;
+        default:
+          resultado = "Escolha inválida, tente novamente.";
+      }
+
+      // document.getElementById("resultado").innerText = resultado;
+
+      let idade = parseInt(window.prompt("Digite a sua idade: "));
+      let status =
+        idade >= 18 ? "Você é maior de idade!" : "Você ainda é menor de idade!";
+
+      document.getElementById("resultado").innerText = status;
+    </script>
+  </body>
+</html>
