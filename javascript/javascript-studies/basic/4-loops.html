@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script>
+      // While
+
+      console.log("While:");
+      let cont = 10;
+      while (cont >= 0) {
+        // Executa enquanto a condição for verdadeira
+        console.log(cont);
+        cont--; // Decremento
+      }
+
+      cont++;
+      console.log("\nDo While:"); // Executa e depois faz a verificação
+      do {
+        console.log(cont);
+        cont++; // Incremento
+      } while (cont <= 10);
+
+      console.log("\n");
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      let x = 0;
+      while (cars[x]) {
+        // Executa enquanto o índice do array for válido
+        console.log(cars[x] + "\n");
+        x++;
+      }
+
+      // For
+
+      let i = 10;
+      console.log("\nFor:");
+      for (; i >= 0; i--) {
+        // A variável i pode ser omitida se tiver sido declarada antes
+        console.log(i);
+      }
+
+      var j = 5;
+      for (var j = 0; j < 10; j++);
+      console.log("\n" + j); // Será impresso 10, porque var tem escopo global e teve o valor alterado dentro do for
+
+      const array = ["JavaScript", 17, 3.1415, 42, "C"];
+      console.log("\n");
+      for (let item in array) {
+        // Varredura de todo o array sem informar o tamanho dele
+        console.log(array[item]);
+      }
+
+      // É a mesma coisa que
+
+      // console.log("\n");
+      // for (let i = 0; i <= array.length; i++) {
+      //   // Varredura de todo o array sem informar o tamanho dele
+      //   console.log(array[i]);
+      // }
+
+      // ou
+
+      // console.log("\n");
+      // for (let item of array) {
+      //   console.log(item + "\n");
+      // }
+
+      const person = { fname: "John", lname: "Doe", age: 25 };
+      let text = "";
+      for (let key in person) {
+        // Varredura de um objeto
+        text += person[key] + " ";
+      }
+      console.log("\n" + text + "\n");
+
+      console.log("Tabuada:");
+      let y = 0;
+      let z = 0;
+      for (let i = 1; i <= 10; i++) {
+        // Estruturas de repetição aninhadas
+        for (let j = 1; j <= 10; j++) {
+          console.log(`${i} x ${j} = ${i * j}\n`);
+        }
+        console.log("\n");
+      }
+    </script>
+  </body>
+</html>
