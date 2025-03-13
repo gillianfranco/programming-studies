@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script>
+      // Declaração e chamamento de um procedimento
+
+      function helloWorld() {
+        console.log("Hello World!\n");
+      }
+
+      helloWorld();
+
+      // Procedimento com parâmetros
+
+      function multiplicacao(num1, num2) {
+        console.log(`${num1 * num2}\n`);
+      }
+
+      multiplicacao(10, 7);
+
+      // Procedimento com parâmentros opcionais
+
+      function soma(num1, num2, imprime = false) {
+        let res = num1 + num2;
+        if (imprime) {
+          console.log(`${res}\n`);
+        }
+      }
+
+      soma(10, 7, true);
+
+      // Declaração e chamamento de uma função
+
+      function raizQuadrada(radicando) {
+        let i = parseInt(radicando / 2);
+        let res = 0;
+        while (i > 0) {
+          if (i * i == radicando) {
+            res = i;
+          }
+          i--;
+        }
+        return res;
+      }
+
+      console.log(`${raizQuadrada(4)}\n`);
+    </script>
+  </body>
+</html>
