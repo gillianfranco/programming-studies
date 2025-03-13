@@ -8,7 +8,7 @@ hello_world()
 # Procedimento com parâmetros
 
 def multiplicacao(num1, num2):
-    print(num1 + num2)
+    print(num1 * num2)
     print()
 
 multiplicacao(10, 7)
