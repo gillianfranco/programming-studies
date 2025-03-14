@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script>
+      // Converte string para number
+
+      let stringValue = "42";
+      let numberValue = parseInt(stringValue);
+
+      console.log(typeof numberValue);
+
+      stringValue = "contando 123";
+      numberValue = parseInt(stringValue); // Retorna NaN se a string não começar com um número
+      console.log(numberValue);
+
+      // Gerar um número aleatório
+
+      let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+      console.log(numeroAleatorio);
+
+      function getRndInteger(min, max) {
+        // Função para gerar número aleatório
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      console.log(getRndInteger(1, 10));
+
+      // Arredondar um número real
+
+      let floatValue = 1.7;
+      console.log(Math.round(floatValue)); // Faz o arredondamento normal
+      console.log(Math.ceil(floatValue)); // Arredonda para cima
+      console.log(Math.floor(floatValue)); // Arredonda para baixo
+      console.log(Math.trunc(floatValue)); // Faz o truncamento
+
+      // Verificar se uma variável possui um número positivo, negativo ou nulo
+
+      floatValue = -1.7;
+      console.log(Math.sign(floatValue)); // Retorna -1 para negativo, 1 para positivo ou 0 para nulo
+
+      // Verificar se uma variável é numérica
+
+      let value = "17";
+      let res = isNaN(value)
+        ? `${value} --> não é um número`
+        : `${value} --> é um número.`;
+      console.log(res);
+
+      // Operações matemáticas
+
+      console.log(Math.pow(10, 2)); // Potenciação
+      // console.log(10 ** 2);
+
+      console.log(Math.sqrt(16)); // Radiciação
+      // console.log(16 ** (1 / 2));
+
+      console.log(Math.abs(-17)); // Número absoluto
+
+      console.log(Math.sin(30)); // Seno em radianos
+      // console.log(Math.sin((30 * Math.PI) / 180)); // Seno em graus
+
+      console.log(Math.cos(30)); // Cosseno em radianos
+      // console.log(Math.cos((30 * Math.PI) / 180)); // Cosseno em graus
+
+      console.log(Math.min(0, 150, 30, 20, -8, -200)); // Valor mínimo
+
+      console.log(Math.max(0, 150, 30, 20, -8, -200)); // Valor máximo
+
+      console.log(Math.log(10)); // Logaritmo natural de 10
+      console.log(Math.log2(10)); // Logaritmo de 10 na base 2
+      console.log(Math.log10(10)); // Logaritmo decimal de 10
+    </script>
+  </body>
+</html>
