@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <p class="text">Hello</p>
+    <p class="text">World!</p>
+    <p id="result"></p>
+
+    <form action="" id="form1">
+      <input type="text" name="name" value="Gillian" />
+      <input type="text" name="phone" value="(34) 99768-5204" />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <br />
+
+    <div id="data"></div>
+
+    <script>
+      const helloWorld = document.getElementsByClassName("text"); // Encontrando o(s) elemento(s) com o nome da classe
+      const containerResult = document.getElementById("result"); // Encontrando o elemento com a id
+      const paragraph = document.getElementsByTagName("p"); // Encontrando o(s) elemento(s) com o nome da tag
+      const dataContainer = document.querySelectorAll("div#data"); // Encontrando o(s) elemento(s) com um seconst r css
+      const data = document.forms["form1"]; // Encontrando formulário com a id "form1"
+
+      containerResult.innerHTML = `Resultado: ${helloWorld[0].innerHTML}, ${helloWorld[1].innerHTML}`;
+
+      let text = "";
+
+      for (let i = 0; i < data.length; i++) {
+        text += data.elements[i].value + "<br>";
+      }
+
+      console.log(text);
+
+      dataContainer[0].innerHTML = text;
+    </script>
+  </body>
+</html>
