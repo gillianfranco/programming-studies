@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <button type="button" onclick="imprimirData();">Clique aqui</button>
+    <div id="dateContainer"></div>
+
+    <button
+      type="button"
+      id="botao-acumulador"
+      onclick="this.innerHTML = acumulador++"
+    ></button>
+
+    <script>
+      function imprimirData() {
+        document.getElementById("dateContainer").innerHTML = Date();
+      }
+      document.getElementById("dateContainer").innerHTML = Date();
+
+      let acumulador = 0;
+      document.getElementById("botao-acumulador").innerHTML = acumulador;
+    </script>
+  </body>
+</html>
