@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script>
+      // Tamanho da string
+      let nome = "Gillian";
+      console.log(`${nome} tem ${nome.length} letras`); // Template String
+
+      // Escape Characters
+      console.log('"Entre aspas"'); // \"Entre aspas\"
+      console.log("Uma barra: \\");
+      console.log("\tLeft Space");
+      console.log("Break\nline");
+
+      // Extraindo caracteres
+      let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      console.log(alphabet);
+
+      console.log(alphabet.charAt(6)); // Retorna o caractere localizado no índice
+      console.log(alphabet.charCodeAt(6)); // Retorna o código UTF-16 do caractere
+      console.log(alphabet.at(6)); // Retorna o caractere localizado no índice
+      console.log(alphabet[6]); // Retorna o caractere localizado no índice
+    </script>
+  </body>
+</html>
