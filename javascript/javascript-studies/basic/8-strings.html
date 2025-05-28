@@ -24,6 +24,32 @@
       console.log(alphabet.charCodeAt(6)); // Retorna o código UTF-16 do caractere
       console.log(alphabet.at(6)); // Retorna o caractere localizado no índice
       console.log(alphabet[6]); // Retorna o caractere localizado no índice
+      console.log(alphabet.slice(0, 3)); // Retorna um pedaço da string
+      console.log(alphabet.substring(3, 0)); // Também retorna um pedaço, porém consegue inverter os parâmetros e é possível omitir o segundo parâmetro (será tratado como 0)
+
+      // Alterando caracteres
+      let hello = "Hello, World!";
+      console.log(hello.replace("World", "Gillian"));
+      console.log(hello.replaceAll("l", "g")); // Substitui todas as ocorrências
+      console.log(hello.toUpperCase());
+      console.log(hello.toLowerCase());
+
+      hello = "    Hello, World!    ";
+      console.log(hello.trim()); // Remove os espaços das extremidades da string
+      console.log(hello.trimStart());
+      console.log(hello.trimEnd());
+
+      let age = 18;
+      console.log(age.toString()); // Transforma um número em string
+
+      console.log(hello.split(",")); // Separa uma string usando um caractere como delimitador e retorna um array
+
+      console.log(hello.repeat(10)); // Repete uma string
+
+      // Pesquisando strings
+      console.log(alphabet.indexOf("G")); // Retorna o índice da primeira ocorrência da substring e retorna -1 se ela não for encontrada. Além disso, é possível adicionar mais um argumento que indique o início da pesquisa
+      console.log(alphabet.lastIndexOf("G")); // Retorna o índice da última ocorrência da substring
+      console.log(alphabet.search("XY")); // Retorna o índice da primeira ocorrência da substring. Diferentemente do `indexOf()`, com este método também é possível fazer buscas utilizando expressões regulares.
     </script>
   </body>
 </html>
