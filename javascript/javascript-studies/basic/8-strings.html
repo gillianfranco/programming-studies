@@ -50,6 +50,12 @@
       console.log(alphabet.indexOf("G")); // Retorna o índice da primeira ocorrência da substring e retorna -1 se ela não for encontrada. Além disso, é possível adicionar mais um argumento que indique o início da pesquisa
       console.log(alphabet.lastIndexOf("G")); // Retorna o índice da última ocorrência da substring
       console.log(alphabet.search("XY")); // Retorna o índice da primeira ocorrência da substring. Diferentemente do `indexOf()`, com este método também é possível fazer buscas utilizando expressões regulares.
+      console.log(hello.match(/o/g)); // Procura por todas as ocorrências de "o" na string utilizando Regex e retorna um array com todas as ocorrências
+
+      // Validações
+      console.log(alphabet.includes("G")); // Verifica se a string contém a substring procurada
+      console.log(hello.startsWith("H", 4)); // Verifica se a string começa com uma determinada substring. Também é possível indicar a posição inicial de procura
+      console.log(hello.endsWith("Hello", 9)); // Verifica se a string termina com uma determinada substring. Também é possível indicar a posição final de procura
     </script>
   </body>
 </html>
