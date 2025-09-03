@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <p id="teste"></p>
+    <script>
+      // Criando um array
+
+      const cars = ["Saab", "Volvo", "BMW"];
+      // É a mesma coisa que const array1 = new Array("Saab", "Volvo", "BMW");
+      // Com a palavra chave "new" é possível criar um array vazio com várias posições:
+      const emptyArray = new Array(40); // Array com 40 slots vazios
+
+      // No JS, arrays são considerados um tipo de Objeto:
+      console.log(typeof cars);
+      // Além disso, o JS não permite usar arrays associativos (ou hashes)
+
+      // É possível declarar o array e em outro momento preenchê-lo:
+      const cars2 = [];
+      cars2[0] = "Saab";
+      cars2[1] = "Volvo";
+      cars2[2] = "BMW";
+
+      // Acessando elementos do array
+
+      for (let i = 0; i < 3; i++) {
+        console.log(cars[i]); // Retorna um elemento de cada vez
+      }
+
+      console.log(cars2); // Retorna todo o array
+
+      console.log(cars2[cars2.length - 1]); // Retorna o último elemento do array
+
+      // Mudando um elemento do array
+
+      cars[0] = "Opel";
+
+      // Convertendo arrays para strings
+
+      const fruits = ["Banana", "Orange", "Apple"];
+      console.log(fruits.toString());
+
+      // Arrays no JS podem armazenar diferentes tipos de dados
+
+      const myArray = [];
+      myArray[0] = Date.now();
+      myArray[1] = () => console.log("Hello, World!");
+      myArray[2] = { name: "Gillian", age: 19 };
+
+      // Propriedades e métodos dos arrays no JS
+
+      console.log(cars.length); // Retorna a quantidade de elementos
+
+      console.log(cars.sort()); // Ordena os elementos do array de forma definitiva
+
+      cars.forEach(function (value) {
+        console.log(value);
+      }); // Acessa todos os elementos do array
+
+      fruits.push("Lemon"); // Adiciona um elemento no array
+      // Mesma coisa que fruits[fruits.length] = "Lemon";
+
+      // Verificação de arrays
+
+      console.log(Array.isArray(cars)); // Retorna true ou false
+
+      console.log(fruits instanceof Array); // Retorna se um objeto foi criado por um determinado construtor, caracterizando um array
+    </script>
+  </body>
+</html>
