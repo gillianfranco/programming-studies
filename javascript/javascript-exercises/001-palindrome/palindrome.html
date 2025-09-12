@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <label for="palavra">Type any word:</label>
+    <input type="text" id="word" autocomplete="off" required />
+    <button onclick="isPalindrome()">Submit</button> <br />
+    <div id="result"></div>
+
+    <script>
+      function isPalindrome() {
+        const word = document.getElementById("word").value;
+        const reversedWord = word.split("").reverse().join("");
+        const resultContainer = document.getElementById("result");
+
+        if (word == reversedWord) {
+          resultContainer.innerHTML = `<p style='color: green;'>The word <span style='text-decoration: underline;'>${word}</span> is a palindrome.`;
+        } else {
+          resultContainer.innerHTML = `<p style='color: red;'>The word <span style='text-decoration: underline;'>${word}</span> isn't a palindrome.`;
+        }
+      }
+    </script>
+  </body>
+</html>
