@@ -11,7 +11,7 @@ int main (){
     // Usando o modo "a", é possível escrever dentro do arquivo sem sobrescrever o conteúdo
 
     fseek(fptr, 0, SEEK_SET); // Aponta para o início do arquivo
-    // Usano SEEK_END, aponta para o final do arquivo
+    // Usando SEEK_END, aponta para o final do arquivo
 
     fprintf(fptr, "1-Hello World!"); // Escreve dentro do arquivo
 
