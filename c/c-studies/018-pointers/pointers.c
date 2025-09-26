@@ -41,5 +41,15 @@ int main(){
         printf("%d\n", *(ptr2 + i));
     }
 
+    // Ponteiro de ponteiro
+
+    int x = 17;
+    int *ponteiro_x = &x;
+    int **ponteiro_ponteiro_x = &ponteiro_x; 
+    
+    printf("%d\n", x);
+    printf("%d\n", *ponteiro_x);
+    printf("%d\n", **ponteiro_ponteiro_x);
+
     return 0;
 }   
