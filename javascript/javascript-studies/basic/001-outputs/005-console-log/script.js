@@ -1,0 +1,1 @@
+console.log("Teste realizado com sucesso!"); // Escreve no console do navegador

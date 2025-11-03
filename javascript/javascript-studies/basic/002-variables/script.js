@@ -1,0 +1,41 @@
+// Declaração e Atribuição Utilizando `var`
+var altura = 1.82;
+console.log(altura);
+
+// Declaração e Atribuição Utilizando `let`
+let idade = 19;
+console.log(idade);
+
+// Declaração e Atribuição de uma constante
+const NOME = "Gillian"; // Pode ser atribuído utilizando aspas simples também
+console.log(NOME);
+console.log(NOME[0]); // Imprime a primeira letra do nome
+const CARROS = ["Volvo", "BMW", "Fiat"]; // Pode se comportar como um array
+console.log(CARROS[0]);
+const PESSOA = { nome: "Gillian", idade: 19, altura: 1.82 }; // Pode se comportar como um objeto
+console.log(PESSOA.nome);
+
+// A declaração e atribuição podem ser feitas de forma separadas
+let nota1, nota2;
+console.log(nota1); // Imprime `undefined`
+nota1 = 10;
+nota2 = 8;
+
+// Impressão de Várias variáveis
+console.log("Nota 1: " + nota1 + ";\nNota 2: " + nota2 + ".");
+
+// Case sensitive: As variáveis se diferenciam por ter letras mínusculas ou maiúsculas
+let lastName = "Melo",
+    lastname = "Franco";
+console.log("lastName = " + lastName);
+console.log("lasname = " + lastname);
+
+// Nomes válidos
+let fruta = "Maçã"; // Forma recomendada
+let nota3 = 8;
+let menor_nota = 2;
+let Maior_nota = 10;
+let notaMedia = (2 + 10) / 2; // Forma recomendada - camelCase
+let _menor_ = 1;
+let $dolar = 5.69;
+let adição = 10;
